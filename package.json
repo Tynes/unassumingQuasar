@@ -3,10 +3,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "cookie-parser": "^1.4.1",
-<<<<<<< a1fcb7ea0bebe205e15791805284767923ab5047
     "cors": "^2.7.1",
-=======
->>>>>>> Add server dependencies
     "eslint": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^0.6.2",
     "express": "^4.13.4",
