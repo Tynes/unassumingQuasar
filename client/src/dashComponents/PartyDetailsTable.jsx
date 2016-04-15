@@ -36,9 +36,6 @@ class PartyDetailsTable extends React.Component {
     });
   }
 
-
-
-
   render() {
   {console.log('so stately', this.state.PartyDetailsData);}
 
