@@ -7,6 +7,10 @@ import login from './views/login.jsx';
 import about from './views/about.jsx';
 
 import HeaderNavigation from './shared/HeaderNavigation.jsx';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+
 import 'bootstrap/less/bootstrap.less';
 // see this on adding inline css - https://github.com/gajus/react-css-modules
 import 'bootstrap/dist/css/bootstrap.css';
@@ -21,6 +25,7 @@ const App = () => {
     </Router>
   );
 };
+
 
 ReactDOM.render(<div>
                   <HeaderNavigation />
