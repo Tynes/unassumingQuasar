@@ -14,6 +14,24 @@ class PartyDetailsTable extends React.Component {
     };
   }
 
+  componentWillMount() {
+    this.loadCommentsFromServer('http://localhost:3000/eventlist', (data) => { this.setState({ PartyDetailsData: data }); });
+  }
+
+  componentDidMount() {
+    console.log('dataaa', this.state);
+  }
+  loadCommentsFromServer(url, stateKey) {
+    console.log('ajax');
+
+    $.ajax ({
+      url: url,
+      type: 'GET',
+      dataType: 'json',
+      success: stateKey,
+      error: (data) => { console.log('no dinner party for you!', data); },
+    });
+  }
 
   render() {
     return (

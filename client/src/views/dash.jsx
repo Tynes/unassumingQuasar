@@ -1,6 +1,7 @@
 import React from 'react';
 import CreatePartyForm from '../dashComponents/CreatePartyForm.jsx';
 import PartyDetailsTable from '../dashComponents/PartyDetailsTable.jsx';
+
 import get from '../utils/get.js';
 import post from '../utils/post.js';
 
@@ -54,6 +55,19 @@ class Dash extends React.Component {
       </div>
     );
   }
+=======
+import GuestsTable from '../dashComponents/GuestListTable.jsx';
+
+function dash() {
+  return (
+    <div>
+      <h1>Dash</h1>
+      <CreatePartyForm />
+      <h3>Your Parties!</h3>
+      <PartyDetailsTable />
+    </div>
+  );
+>>>>>>> Style create a party form
 }
 
 export default Dash;

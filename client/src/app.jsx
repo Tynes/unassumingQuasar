@@ -10,10 +10,9 @@ import HeaderNavigation from './shared/HeaderNavigation.jsx';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
-
-import 'bootstrap/less/bootstrap.less';
+import 'flexboxgrid/dist/flexboxgrid.css';
 // see this on adding inline css - https://github.com/gajus/react-css-modules
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 const App = () => {
   return (
