@@ -10,6 +10,7 @@ import HeaderNavigation from './shared/HeaderNavigation.jsx';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
+import './assets/styles.css';
 import 'flexboxgrid/dist/flexboxgrid.css';
 // see this on adding inline css - https://github.com/gajus/react-css-modules
 
