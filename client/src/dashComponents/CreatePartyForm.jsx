@@ -6,7 +6,7 @@ import TextField from 'material-ui/lib/text-field';
 import RaisedButton from 'material-ui/lib/raised-button';
 import Card from 'material-ui/lib/card/card';
 import CardMedia from 'material-ui/lib/card/card-media';
-import CardHeader from 'material-ui/lib/card/card-header';
+
 import CardActions from 'material-ui/lib/card/card-actions';
 
 class CreatePartyForm extends React.Component {

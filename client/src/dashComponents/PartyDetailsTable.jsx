@@ -6,6 +6,8 @@ import CardText from 'material-ui/lib/card/card-text';
 import List from 'material-ui/lib/lists/list';
 import ListItem from 'material-ui/lib/lists/list-item';
 import AutoCompleteGuests from './AutoCompleteGuests.jsx';
+import CardMedia from 'material-ui/lib/card/card-media';
+
 
 class PartyDetailsTable extends React.Component {
   constructor() {
@@ -38,23 +40,41 @@ class PartyDetailsTable extends React.Component {
       <div>
         {this.props.PartyDetailsData.map((party) => (
           <Card>
-            <CardHeader title={party.eventName} key={party.id} />
-            <CardText>
-              <p>Location: {party.location}</p>
-              <p>Time: {party.time}</p>
-              <p>Cost: {party.cost}</p>
-              <p>Description: {party.description}</p>
-            </CardText>
-            <CardActions>
-              <AutoCompleteGuests getFromSever={this.props.getFromSever.bind(this)}
-                postToServer={this.props.postToServer.bind(this)}
-              />
-            </CardActions>
-            <List>
-              {party.guestlist.map(guest => (
-                <ListItem key={guest.id} primaryText={guest.name} />
-              ))}
-            </List>
+            <div className="row">
+              <div className="col-md-12">
+                <CardHeader title={party.eventName} key={party.id} />
+              </div>
+            </div>
+            <div className="row">
+              <CardMedia>
+                <p>picture coming in</p>
+              </CardMedia>
+            </div>
+            <div className="row">
+              <h2 className="col-md-12">Upcoming Parties</h2>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <CardText>
+                  <p className="large-text">Location: {party.location}</p>
+                  <p className="large-text">Time: {party.time}</p>
+                  <p className="large-text">Cost: {party.cost}</p>
+                  <p className="large-text">Description: {party.description}</p>
+                </CardText>
+              </div>
+              <div className="col-md-6">
+                <CardActions>
+                  <AutoCompleteGuests getFromSever={this.props.getFromSever.bind(this)}
+                    postToServer={this.props.postToServer.bind(this)}
+                  />
+                </CardActions>
+                <List>
+                  {party.guestlist.map(guest => (
+                    <ListItem key={guest.id} primaryText={guest.name} />
+                  ))}
+                </List>
+              </div>
+            </div>
           </Card>
         ))};
       </div>
