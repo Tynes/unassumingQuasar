@@ -54,55 +54,6 @@ class CreatePartyForm extends React.Component {
   render() {
 
     return (
-<<<<<<< a990570cda456fe8522297a181df43a716f5d848
-      <div>
-        <form onSubmit={(event) => this.handleFormSubmit(event, this.state)}>
-          <TextField
-            id="eventName"
-            type="text"
-            floatingLabelText= "Event Name"
-            onChange={this.onChange.bind(this, "eventName")}
-          />
-          <TextField
-            id="location"
-            type="text"
-            floatingLabelText= "Location"
-            onChange={this.onChange.bind(this, "location")}
-          />
-          <TextField
-            id="date"
-            type="text"
-            floatingLabelText="Date"
-            onChange={this.onChange.bind(this, "text")}
-          />
-          <TextField
-            id="time"
-            type="text"
-            floatingLabelText= "Time"
-            onChange={this.onChange.bind(this, "time")}
-          />
-          <TextField
-            id="cost"
-            type="text"
-            floatingLabelText= "Cost"
-            onChange={this.onChange.bind(this, "cost")}
-          />
-          <TextField
-            id="description"
-            type="textarea"
-            floatingLabelText= "Description"
-            onChange={this.onChange.bind(this, "description")}
-          />
-          <PhotoUpload
-            addPicture={this.addPicture.bind(this)}
-          />
-          <RaisedButton
-            type="submit"
-            label="Create Dinner Party"
-          />
-        </form>
-      </div>
-=======
       <Card>
         <div className="row">
           <h2 className="col-md-12">Create an Event</h2>
@@ -180,7 +131,6 @@ class CreatePartyForm extends React.Component {
           </div>
         </div>
       </Card>
->>>>>>> Style create a party form
     );
   }
 }
