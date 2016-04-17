@@ -31,14 +31,6 @@ class Dash extends React.Component {
     this.setState({PartyDetailsData: newPartySate});
   }
 
-
-
-
-
-
-
-
-
   render() {
     {console.log('dash state', this.state);}
     return (
@@ -55,19 +47,6 @@ class Dash extends React.Component {
       </div>
     );
   }
-=======
-import GuestsTable from '../dashComponents/GuestListTable.jsx';
-
-function dash() {
-  return (
-    <div>
-      <h1>Dash</h1>
-      <CreatePartyForm />
-      <h1>Your Parties!</h1>
-      <PartyDetailsTable />
-    </div>
-  );
->>>>>>> Style create a party form
 }
 
 export default Dash;
