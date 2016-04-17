@@ -63,7 +63,7 @@ function dash() {
     <div>
       <h1>Dash</h1>
       <CreatePartyForm />
-      <h3>Your Parties!</h3>
+      <h1>Your Parties!</h1>
       <PartyDetailsTable />
     </div>
   );
