@@ -3,11 +3,11 @@ import LoginForm from '../loginComponents/LoginForm.jsx';
 
 function login() {
   return (
-    <div>
-      <h1>login test</h1>
+    <div className="center">
+      <br /><br /><br /><br />
       <LoginForm />
     </div>
-  )
+  );
 }
 
 export default login;
