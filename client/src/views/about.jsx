@@ -38,25 +38,32 @@ let aboutUs = [
 
 ];
 
+let style = {
+  paddingRight: '0px',
+};
+
 class about extends React.Component {
   render() {
     return (
-      <div>
+      <div className="text-align-center">
         <h1>About</h1>
         <p>We bring people together to socialize.</p>
-        {console.log(aboutUs)}
         {aboutUs.map(member =>
-          <Card>
+          <Card className="center">
             <CardMedia>
               <img src={member.picture} />
             </CardMedia>
-            <CardHeader
-              title={member.name}
-              subtitle={member.job}
-            />
-            <CardText>
-              <p>{member.description}</p>
-            </CardText>
+            <br />
+            <div className="text-align-center">
+              <CardHeader
+                textStyle={style}
+                title={member.name}
+                subtitle={member.job}
+              />
+              <CardText>
+                <p>{member.description}</p>
+              </CardText>
+            </div>
           </Card>
         )}
       </div>

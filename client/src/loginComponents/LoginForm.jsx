@@ -1,6 +1,14 @@
 import React from 'react';
-import ButtonInput from 'react-bootstrap/lib/ButtonInput';
-import TextField from 'material-ui/lib/text-field';
+import Card from 'material-ui/lib/card/card';
+import CardActions from 'material-ui/lib/card/card-actions';
+import CardHeader from 'material-ui/lib/card/card-header';
+import RaisedButton from 'material-ui/lib/raised-button';
+
+import googleLogo from '../assets/google-logo.png';
+
+let style = {
+  textAlign: 'center',
+};
 
 class LoginForm extends React.Component {
   constructor() {
@@ -9,9 +17,24 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <button><a href="/auth/google">Login with Google</a></button>
-      </div>
+      <Card style={style}>
+        <div className="row">
+          <div className="col-md-6 col-md-offset-3">
+            <CardHeader>
+              <h2>Login with a Google Account</h2>
+            </CardHeader>
+            <CardActions>
+              <RaisedButton
+                className="center"
+                linkButton={true}
+                href="/auth/google"
+                label="Login"
+                icon={<img className="google-logo" src={googleLogo} />}
+              />
+            </CardActions>
+          </div>
+        </div>
+      </Card>
     );
   }
 
